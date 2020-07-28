@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia em Miranda</title>
+    <style>
+        body {
+            background: rgb(102, 149, 219);
+
+        }
+        section#quadro {
+            background-color: rgb(79, 91, 110);
+            color: white;
+            border-radius: 25px;
+            width: 350px;
+            height: 100px;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            text-align: center;
+            margin-left: -150px;
+            line-height: 90px;
+            font-family: Arial;
+            font-size: 15px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+        }
+
+        section#info {
+            background-color: rgb(250, 252, 255);
+            color: white;
+            border-radius: 25px;
+            width: 1000px;
+            height: 330px;
+            position: absolute;
+            top: 280px;
+            left: 50%;
+            text-align: center;
+            margin-left: -500px;
+            font-family: Arial;
+            font-size: 15px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.425);
+        }
+
+        button#NouS {
+            background-color: rgb(255, 255, 255);
+            width: 50px;
+            height: 20px;
+            border-radius: 8px;
+            position: absolute;
+            left: 90%;
+            top: 15%;
+            margin-left: -25px;
+            margin-top: -10px;
+            font-size: 10px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.425);
+        }
+
+        div#copyright {
+            position: absolute;
+            top: 97%;
+            left: 50%;
+            width: 300px;
+            text-align: center;
+            margin-left: -150px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 12px;
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.466);
+        }
+
+        div#textbox1 {
+            position: absolute;
+            text-align: justify;
+            top: 30px;
+            left: 30px;
+            width: 450px;
+            height: 270px;
+            color: black;
+            
+        }
+
+        div#textbox2 {
+            position: absolute;
+            text-align: justify;
+            top: 30px;
+            left: 515px;
+            width: 450px;
+            height: 270px;
+            color: black;
+            
+        }
+    </style>
+    <script src="moment.js"></script>
+</head>
+<body>
+    <section id="quadro">
+        <button id="NouS" value="Norte" onclick="NorthAndSouth()">Norte</button>
+        <div id="hoje"></div>
+    </section>
+    <section id="info">
+        <div id="textbox1">
+            <p>Em Miranda o calend&aacute;rio &eacute; baseado na passagem das esta&ccedil;&otilde;es e por isso cada hemisf&eacute;rio experimenta esta&ccedil;&otilde;es diferentes em seus calend&aacute;rios.</p>
+            <table style="border-color: #000000; width: 200px; margin-left: auto; margin-right: auto;" border="2" cellspacing="2">
+            <tbody>
+            <tr>
+            <td style="text-align: center; width: 56px;"><strong>Norte</strong></td>
+            <td style="text-align: center; width: 56px;"><strong>Sul</strong></td>
+            </tr>
+            <tr>
+            <td style="width: 56px;">Primavera</td>
+            <td style="width: 56px;">Outono</td>
+            </tr>
+            <tr>
+            <td style="width: 56px;">Ver&atilde;o</td>
+            <td style="width: 56px;">Inverno</td>
+            </tr>
+            <tr>
+            <td style="width: 56px;">Outono</td>
+            <td style="width: 56px;">Primavera</td>
+            </tr>
+            <tr>
+            <td style="width: 56px;">Inverno</td>
+            <td style="width: 56px;">Ver&atilde;o</td>
+            </tr>
+            </tbody>
+            </table>
+            <p>A dura&ccedil;&atilde;o de cada esta&ccedil;&atilde;o &eacute; de 91 dias, formando um ano com 4 esta&ccedil;&otilde;es e 364 dias.</p>
+        </div>
+        <div id="textbox2">
+            <p>&nbsp;</p>
+            <p>Datas comemorativas de Miranda:</p>
+            <ul>
+            <li><strong>1&ordm; dia da Primavera (Norte) / Outono (Sul):</strong> O dia da chegada.</li>
+            <li><strong>19&ordm; dia da Primavera (Norte) / Outono (Sul):</strong> Dia de Gaelia (a primeira cidade).</li>
+            <li><strong>68&ordm; dia da Primavera (Norte) / Outono (Sul):</strong> Dia de Cantares (celebra&ccedil;&atilde;o da fertilidade).</li>
+            <li><strong>38&ordm; dia do Ver&atilde;o (Norte) / Outono (Sul):</strong> O &uacute;ltimo sangue intruso.</li>
+            </ul>
+        </div>
+    </section>
+    <div id="copyright">© LeomarLinhares</div>
+</body>
+<script src="funcionamento.js"></script>
+</html>
